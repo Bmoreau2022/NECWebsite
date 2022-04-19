@@ -72,8 +72,8 @@ body {
 }
 
 .btn {
-    background: var(--orange-peel);
-    color: var(--pure);
+    background: var(--pure);
+    color: var(--orange-peel);
     outline: none;
     padding: 8px 20px;
     font-size: 14px;
