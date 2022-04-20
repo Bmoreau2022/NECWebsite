@@ -18,7 +18,7 @@
 }
 
 
-body {
+html body {
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -238,3 +238,29 @@ nav ul.dropdown-list {
 .mobile .nav-wrapper ul.dropdown-list li a {
     color: var(--dark-grey);
 }
+
+footer{
+    background: var(--dark);
+}
+
+footer p, strong{
+    color: var(--pure);
+}
+
+footer p a, img, hr{
+    color: var(--pure);
+}
+
+footer p a:link, a:hover{
+    text-decoration: none;
+    color: var(--pure);
+}
+
+footer img{
+    width: 60%;
+}
+
+footer{
+    margin: auto;
+}
+
