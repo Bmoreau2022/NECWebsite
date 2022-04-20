@@ -9,16 +9,17 @@
 :root {
     --dark: #000000;
     --pure: #ffffff;
+    --light-grey: #888888;
     --dark-grey: #5F6263;
     --evergreen: #098761;
     --grass-green: #54B02E;
-    --orange-peel: #F5B002;
+    --orange-peel: #FF9002;
     --sky: #76DEDE;
 }
 
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .container {
@@ -27,10 +28,20 @@ body {
     margin: 0 auto;
 }
 
+.nav-wrapper .brand span h4{
+    font-weight: bold;
+}
+
+.nav-wrapper .brand span p{
+    font-weight: bold;
+}
+
+
 .nav-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: linear-gradient(to right, var(--sky), var(--pure));
 }
 
 .brand {
@@ -63,10 +74,15 @@ body {
     text-decoration: none;
     letter-spacing: 1px;
     transition: all .5s ease-in-out;
+    font-size: large;
 }
 
 .nav-wrapper ul.nav-list li a:hover, .nav-wrapper ul.nav-list li.active a {
     color: var(--orange-peel);
+}
+
+.nav-wrapper ul.nav-list li button:hover, .nav-wrapper ul.nav-list li.active button {
+    color: var(--grass-green);
 }
 
 .btn {
@@ -104,13 +120,13 @@ main section.header h1 {
 main section.header h4 {
     font-size: 18px;
     font-weight: 400;
-    color: var(--dark-grey);
+    color: var(--light-grey);
     margin-bottom: 20px;
 }
 nav ul.dropdown-list {
     list-style-type: none;
     display: block;
-    background: var(--grass-green);
+    background-image: linear-gradient(var(--sky), var(--pure));
     padding: 6px 16px;
     position: absolute;
     width: max-content;
