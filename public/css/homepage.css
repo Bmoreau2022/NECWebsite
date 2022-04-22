@@ -241,6 +241,7 @@ nav ul.dropdown-list {
 
 footer{
     background: var(--dark);
+    padding: 5% 10%;
 }
 
 footer p, strong{
