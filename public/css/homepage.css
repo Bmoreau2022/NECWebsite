@@ -9,17 +9,20 @@
 :root {
     --dark: #000000;
     --pure: #ffffff;
+    --lighter-grey: #D7D7D7;
     --light-grey: #888888;
     --dark-grey: #5F6263;
     --evergreen: #098761;
     --grass-green: #54B02E;
     --orange-peel: #FF9002;
     --sky: #76DEDE;
+    --sky-light: #BBEBEA;
 }
 
 
 html body {
     font-family: 'Noto Sans', sans-serif;
+    background-color: var(--lighter-grey);
 }
 
 .container {
@@ -265,3 +268,32 @@ footer{
     margin: auto;
 }
 
+
+/* Page specific CSS */
+
+main{
+    background-color: var(--lighter-grey);
+}
+.intro h4{
+    color: var(--orange-peel);
+    text-align: center;
+    font-weight: bold;
+}
+
+.intro p{
+    text-align: center;
+}
+
+.intro .text{
+    padding: 2.5%;
+    border: 2px solid var(--dark-grey);
+    background-color: var(--sky-light);
+}
+
+.intro .homeImg{
+    padding-left: 0;
+    padding-right: 0;
+    border: 2px solid var(--dark-grey);
+}
+
+/* Carousel CSS */
