@@ -19,16 +19,14 @@
     --sky-light: #BBEBEA;
 }
 
-
-html body {
+html, body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: var(--lighter-grey);
 }
 
 .container {
-    width: 1152px;
-    max-width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
 }
 
 .nav-wrapper .brand span h4{
@@ -271,9 +269,6 @@ footer{
 
 /* Page specific CSS */
 
-main{
-    background-color: var(--lighter-grey);
-}
 .intro h4{
     color: var(--orange-peel);
     text-align: center;
@@ -297,3 +292,4 @@ main{
 }
 
 /* Carousel CSS */
+

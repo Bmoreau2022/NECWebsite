@@ -22,7 +22,7 @@
 
 html body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: var(--lighter-grey);
+
 }
 
 .container {
@@ -266,10 +266,6 @@ footer img{
 
 footer{
     margin: auto;
-}
-
-main{
-    background-color: var(--lighter-grey);
 }
 
 .staffHead h3{

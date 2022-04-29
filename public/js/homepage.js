@@ -35,22 +35,25 @@ hamburger.addEventListener('click', function() {
     }
 })
 
-$('.carousel[data-type="multi"] .item').each(function(){
-    var next = $(this).next(); // grabs the next sibling of the carouselGrid
-    if (!next.length) { // if ther isn't a next
-        next = $(this).siblings(':first'); // this is the first
-    }
-    next.children(':first-child').clone().appendTo($(this)); // put the next ones on the array
-
-
-
-    for (var i=0;i<3;i++) { // THIS LOOP SPITS OUT EXTRA ITEMS TO THE CAROUSEL
-        next=next.next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
-    }
-
-
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
 });
