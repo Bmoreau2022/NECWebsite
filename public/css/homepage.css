@@ -19,14 +19,15 @@
     --sky-light: #BBEBEA;
 }
 
-html, body {
+html body {
     font-family: 'Noto Sans', sans-serif;
+
 }
 
 .container {
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
+    width: 1152px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .nav-wrapper .brand span h4{
