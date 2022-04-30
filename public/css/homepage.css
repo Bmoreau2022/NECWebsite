@@ -16,7 +16,7 @@
     --evergreen: #098761;
     --grass-green: #54B02E;
     --yellow: #F0EB17;
-    --orange-peel: #FF9002;
+    --orange-peel: #FF6202;
     --sky: #76DEDE;
     --sky-light: #BBEBEA;
 }
@@ -274,9 +274,6 @@ footer {
 
 /* Page specific CSS */
 
-<<<<<<< Updated upstream
-.intro h4{
-=======
 main {
     background-color: var(--lighter-grey);
 }
