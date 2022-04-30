@@ -6,6 +6,7 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 }
+
 :root {
     --dark: #000000;
     --pure: #ffffff;
@@ -18,17 +19,6 @@
     --orange-peel: #FF9002;
     --sky: #76DEDE;
     --sky-light: #BBEBEA;
-}
-
-html body {
-    font-family: 'Noto Sans', sans-serif;
-
-}
-
-.container {
-    width: 1152px;
-    max-width: 90%;
-    margin: 0 auto;
 }
 
 .nav-wrapper .brand span h4{
@@ -241,57 +231,3 @@ nav ul.dropdown-list {
 .mobile .nav-wrapper ul.dropdown-list li a {
     color: var(--dark-grey);
 }
-
-footer{
-    background: var(--dark);
-    padding: 5% 10%;
-}
-
-footer p, strong{
-    color: var(--pure);
-}
-
-footer p a, img, hr{
-    color: var(--pure);
-}
-
-footer p a:link, a:hover{
-    text-decoration: none;
-    color: var(--pure);
-}
-
-footer img{
-    width: 60%;
-}
-
-footer{
-    margin: auto;
-}
-
-
-/* Page specific CSS */
-
-.intro h4{
-    color: var(--orange-peel);
-    text-align: center;
-    font-weight: bold;
-}
-
-.intro p{
-    text-align: center;
-}
-
-.intro .text{
-    padding: 2.5%;
-    border: 2px solid var(--dark-grey);
-    background-color: var(--sky-light);
-}
-
-.intro .homeImg{
-    padding-left: 0;
-    padding-right: 0;
-    border: 2px solid var(--dark-grey);
-}
-
-/* Carousel CSS */
-
