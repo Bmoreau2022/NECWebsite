@@ -21,7 +21,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //Configure Mongoose
-mongoose.connect('mongodb://localhost:27017/carDB', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost:27017/', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const userSchema = new mongoose.Schema(
     {
@@ -44,15 +44,9 @@ const userSchema = new mongoose.Schema(
         profile: {
             type: String,
         },
-        brand: {
-            type: String,
-        },
-        carsliked: [{
+        eventsliked: [{
             year: String,
-            make: String,
-            model: String,
-            color: String,
-            price: String
+            event: String
         }]
     }
 )
@@ -115,29 +109,28 @@ app.post('/register', (req, res) => {
         username: req.body.username,
         fullname: req.body.fullname,
         profile: req.body.profile,
-        brand: req.body.brand
     }
     User.register(newUser, req.body.password, (err, user) => {
         if (err) {
             console.log(err);
             res.redirect('/register.html?error=' + err)
-        } else {
+        } else {/*
             if (req.body.password !== req.body.confirm) {
                 console.log(err);
                 res.redirect('/register?error= Passwords do not match');
             } else if (req.body.password.length < 5) {
                 console.log(err);
                 res.redirect('/register?error= Password must be 5 characters or greater');
-            } else {
-                console.log(user);
-                const authenticate = passport.authenticate('local');
-                authenticate(req, res, () => {
-                    res.redirect('/')
-                });
-            }
+            } else {*/
+            console.log(user);
+            const authenticate = passport.authenticate('local');
+            authenticate(req, res, () => {
+                res.redirect('/')
+            });
         }
     })
-});
+})
+;
 
 app.get('/login', (req, res) => {
     if (req.query.error) {
