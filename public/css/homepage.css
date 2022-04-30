@@ -272,6 +272,14 @@ footer {
 }
 
 
+.carousel-caption{
+    opacity: .2;
+}
+
+.carousel-caption:hover{
+    opacity: 1;
+}
+
 /* Page specific CSS */
 
 main {
@@ -279,7 +287,6 @@ main {
 }
 
 .intro h4 {
->>>>>>> Stashed changes
     color: var(--orange-peel);
     text-align: center;
     font-weight: bold;

@@ -35,8 +35,6 @@ hamburger.addEventListener('click', function() {
     }
 })
 
-<<<<<<< Updated upstream
-=======
 $('.carousel[data-type="multi"] .item').each(function(){
     var next = $(this).next(); // grabs the next sibling of the carouselGrid
     if (!next.length) { // if ther isn't a next
@@ -66,4 +64,3 @@ $(document).ready(() => {
         }
     })
 })
->>>>>>> Stashed changes
