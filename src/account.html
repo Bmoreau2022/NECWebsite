@@ -2,14 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>NEC Events</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <title>Account</title>
+
+
 
     <!--    css style-->
     <link rel="stylesheet" href="css/homepage.css">
@@ -34,10 +29,11 @@
     <!--    Datepicker-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
-    <script src="js/events.js" defer></script>
+    <script src="js/account.js" defer></script>
 </head>
+<body class="container mobile">
 <!-- Responsive Nav Bar designed by codersgyan from https://github.com/codersgyan/responsive-navbar -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-xl">
     <div class="container nav-wrapper">
         <div class="brand">
             <span>
@@ -52,10 +48,11 @@
         </div>
         <ul class="nav-list">
             <li class="active">
-                <a href="#">Home</a>
+                <a href="homepage.html">Home</a>
             </li>
             <li>
                 <a href="#">About NEC</a>
+
             </li>
             <li>
                 <a href="#">Resources</a>
@@ -64,6 +61,7 @@
                     <li><a href="courses.html">NEC Courses</a></li>
                     <li><a href="people.html">People</a></li>
                     <li><a href="listening.html">Listening in Nature</a></li>
+                    <li><a href="events.html">Events</a></li>
                 </ul>
             </li>
             <li>
@@ -77,32 +75,46 @@
             <li>
                 <div class="navbar-brand mb-0 logout"><a id="showname" href="/account"></a></div>
             </li>
+            <li>
+                <a class="nav-link active logout" href="/logout">Log out</a>
+            </li>
         </ul>
     </div>
 </nav>
-<br>
-<main class="page landing-page">
-
-<body>
-<section id="events">
-    <ul id="event_list_current" class="list-group">
-
-
-
-    </ul>
-    <ul id="event_list_past" class="list-group">
-
-
-
-    </ul>
-</section>
-</body>
-
+<main class="page landing-page"
+      style="background: url(https://newearthconversation.org/wp-content/uploads/2016/02/homepage-1-e1651273119880.png);">
+    <section class="clean-block features">
+        <div class="container account">
+            <div class="row">
+                <div class="col-xl-4 info">
+                    <!--<div class="block-heading" style="text-align: left;">-->
+                    <div class="col-lg-6">
+                        <!--//class="lead text-left"-->
+                        <h1 id="name"></h1>
+                        <!--class="lead text-left">-->
+                        <h3> Association: <span id="assoc"></span></h3>
+                    </div>
+                </div>
+                <div class="col img"><img id="profile_img" src="../public/assets/img/LIN-walk-1024x576.jpeg" style="width: 100%;height: 100%;"></div>
+            </div>
+        </div>
+    </section>
+    <!--<section id="car_info" style="margin-top: 2%">
+        <div class="row">
+            <div class="col-lg-3">
+                <img id="profile_img" src="img/placeholder.png" width="100%">
+            </div>
+            <div class="col-lg-9">
+                <h1 id="name"></h1>
+                <h3 id="assoc"></h3>
+                <h3>Favorite car list:</h3>
+                <ul id="car_list" class="list-group">
+                    <li class="list-group-item">Favorites</li>
+                </ul>
+            </div>
+        </div>
+    </section>-->
 </main>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-<script src="assets/js/vanilla-zoom.js"></script>
-<script src="assets/js/theme.js"></script>
 <br>
 <footer>
     <div class="row">
@@ -110,9 +122,10 @@
             <p><a href="https://www.clarku.edu/schools/idce/"><img class="alignnone wp-image-1746 size-large"
                                                                    src="https://newearthconversation.org/wp-content/uploads/2019/05/Clark-IDCE-e1612457410360.png"
                                                                    alt=""/></a></p>
-            <p><a href="https://councilontheuncertainhumanfuture.org/"><img class="alignnone wp-image-1746 size-large"
-                                                                            src="https://newearthconversation.org/wp-content/uploads/2019/05/logo_uhf-01-1024x65.png"
-                                                                            alt=""/></a></p>
+            <p><a href="https://councilontheuncertainhumanfuture.org/"><img
+                    class="alignnone wp-image-1746 size-large"
+                    src="https://newearthconversation.org/wp-content/uploads/2019/05/logo_uhf-01-1024x65.png"
+                    alt=""/></a></p>
             <p><a href="https://www.facebook.com/A-New-Earth-Conversation-1138118049600755/" target="_blank"
                   rel="noopener"><i
                     class="fa fa-facebook-official"></i> Follow NEC on Facebook</a></p>
@@ -133,4 +146,6 @@
     </div>
 </footer>
 
+
+</body>
 </html>

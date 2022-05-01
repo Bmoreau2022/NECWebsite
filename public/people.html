@@ -27,7 +27,7 @@
     <!--    Datepicker-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
-    <script src="js/resources.js" defer></script>
+    <script src="js/homepage.js" defer></script>
 </head>
 <body>
 
@@ -63,7 +63,12 @@
             <li><a href="#">Q&A</a></li>
             <li><a href="#">Contact</a></li>
             <li>
-                <button class="btn" style="font-size: larger;">Login</button>
+                <button class="btn" style="font-size: larger;">
+                    <a href="/login">Login</a>
+                </button>
+            </li>
+            <li>
+                <div class="navbar-brand mb-0 logout"><a id="showname" href="/account"></a></div>
             </li>
         </ul>
     </div>

@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Register</title>
 
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+
     <!--    css style-->
     <link rel="stylesheet" href="css/homepage.css">
 
@@ -62,7 +69,9 @@
             <li><a href="#">Q&A</a></li>
             <li><a href="#">Contact</a></li>
             <li>
-                <button class="btn" style="font-size: larger;">Login</button>
+                <button class="btn" style="font-size: larger;">
+                    <a href="/login">Login</a>
+                </button>
             </li>
         </ul>
     </div>
@@ -91,6 +100,15 @@
                         <div class="form-group">
                             <label for="fullname">Full name</label>
                             <input type="text" class="form-control" name="fullname" id="fullname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="assoc">Association</label>
+                            <select id="assoc" class="form-select" aria-label="Default select example" name="assoc">
+                                <option selected value=""></option>
+                                <option value="Faculty">Faculty</option>
+                                <option value="Student">Student</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="profile">Profile Image</label>

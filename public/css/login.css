@@ -280,8 +280,33 @@ main {
 .login-body {
     background-color: var(--sky-light);
 }
+
+.login-card{
+    padding: 50px;
+}
+
 .login {
-    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.login .button {
+    padding: 5px;
+}
+.btn {
+    background: var(--pure);
+    color: var(--orange-peel);
+    outline: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+.login .form-group {
+    padding: 5px;
 }
 
 .login .login-body {

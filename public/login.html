@@ -78,7 +78,7 @@
         <div class="container mt-5 login">
             <div class="row">
                 <div class="col-sm-8">
-                    <div class="login">
+                    <div class="login-card">
                         <div class="login-body">
                             <!-- Makes POST request to /login route -->
                             <form action="/login" method="POST">
@@ -91,13 +91,13 @@
                                     <input type="password" class="form-control" name="password" id="password">
                                 </div>
                                 <div style="color: red"><p id="error_msg"></p></div>
-                                <a class="nav-link active" href="/login">
+                                <a class="nav-link active button" href="/login">
                                     <button type="submit" class="btn btn-dark mt-3">Login</button>
                                 </a>
-                                <a class="nav-link active" href="/register.html">
-                                    <button type="submit" class="btn btn-dark mt-3">Register</button>
-                                </a>
                             </form>
+                            <a class="nav-link active button" href="/register">
+                                <button type="submit" class="btn btn-dark mt-3">Register</button>
+                            </a>
                         </div>
                     </div>
                 </div>

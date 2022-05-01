@@ -44,6 +44,10 @@ const userSchema = new mongoose.Schema(
         profile: {
             type: String,
         },
+        assoc: {
+            type: String,
+        },
+
         eventsliked: [{
             year: String,
             event: String
@@ -108,6 +112,7 @@ app.post('/register', (req, res) => {
     const newUser = {
         username: req.body.username,
         fullname: req.body.fullname,
+        //assoc: req.body.assoc,
         profile: req.body.profile,
     }
     User.register(newUser, req.body.password, (err, user) => {
@@ -134,9 +139,9 @@ app.post('/register', (req, res) => {
 
 app.get('/login', (req, res) => {
     if (req.query.error) {
-        res.redirect("/Account/login.html?error=" + req.query.error);
+        res.redirect("/login.html?error=" + req.query.error);
     } else {
-        res.redirect("/Account/login.html");
+        res.redirect("/login.html");
     }
 });
 
@@ -157,7 +162,7 @@ app.post('/login', (req, res) => {
             })
             authenticate(req, res);
         }
-        res.redirect("../Account/account.html");
+        /*res.redirect("../src/account.html");*/
     })
 });
 
@@ -181,7 +186,8 @@ app.post("/account", (req, res) => {
         username: req.body.username,
         fullname: req.body.fullname,
         profile: req.body.profile,
-        carsliked: req.body.carsliked
+        assoc: req.body.assoc,
+        eventsliked: req.body.eventsliked
     }
     if (req.isAuthenticated()) {
         res.send({
