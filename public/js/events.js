@@ -1,16 +1,15 @@
 function get_event_block(event, idx) {
-    return `<div class="event_block ${idx % 2 === 0 ? 'even_row' : 'odd_row'}">
-                <div class="row">
-                    <div class="col-3">${event.event_name}</div>
-                    <div class="col-3">${event.event_description}</div>
-                    <div class="col-3"><img src="${event.url}" alt=""></div>
-                    
-                    <div class="col-2 d-flex justify-content-end">
-                        <button class="btn btn-outline-primary" value="0">
-                        Like</button>
+    return `<div class="event_block" >
+                
+                    <div class="row" style="text-align: center"><h2>${event.event_name}</h2></div>
+                    <div class="row" style="text-align: center"><h3>${event.event_description}</h3></div>
+                    <div class="row"><img src="${event.url}" alt="" style="width: 30%; margin: auto"></div>
+                    <br>
+                    <div class="row" style="">
+                        <button class="btn btn-outline-primary Attend" value="0" style="width: 30%;margin: auto">Attend</button>
                     </div>
-                </div>
-            </div>`
+                
+            </div><br><hr>`
 }
 
 

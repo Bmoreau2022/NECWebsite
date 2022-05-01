@@ -270,6 +270,13 @@ footer img {
 footer {
     margin: auto;
 }
+body h1 {
+    color: var(--orange-peel);
+
+}
+body {
+    background-color: white;
+}
 
 
 .carousel-caption{
@@ -283,7 +290,7 @@ footer {
 /* Page specific CSS */
 
 main {
-    background-color: var(--lighter-grey);
+    background-color: white;
 }
 
 .intro h4 {
