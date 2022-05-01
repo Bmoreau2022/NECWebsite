@@ -134,9 +134,9 @@ app.post('/register', (req, res) => {
 
 app.get('/login', (req, res) => {
     if (req.query.error) {
-        res.redirect("/login.html?error=" + req.query.error);
+        res.redirect("/Account/login.html?error=" + req.query.error);
     } else {
-        res.redirect("/login.html");
+        res.redirect("/Account/login.html");
     }
 });
 
@@ -157,6 +157,7 @@ app.post('/login', (req, res) => {
             })
             authenticate(req, res);
         }
+        res.redirect("../Account/account.html");
     })
 });
 
