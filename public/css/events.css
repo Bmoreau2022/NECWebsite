@@ -271,3 +271,57 @@ footer {
     margin: auto;
 }
 
+
+.carousel-caption{
+    opacity: .2;
+}
+
+.carousel-caption:hover{
+    opacity: 1;
+}
+
+/* Page specific CSS */
+
+main {
+    background-color: var(--lighter-grey);
+}
+
+.intro h4 {
+    color: var(--orange-peel);
+    text-align: center;
+    font-weight: bold;
+}
+
+.intro p {
+    text-align: center;
+}
+
+.intro .text {
+    padding: 2.5%;
+    border: 2px solid var(--dark-grey);
+    background-color: var(--sky-light);
+}
+
+.intro .homeImg {
+    padding-left: 0;
+    padding-right: 0;
+    border: 2px solid var(--dark-grey);
+}
+
+/* Register CSS */
+.card-body {
+    background-color: var(--sky-light);
+}
+.register h1{
+    color: var(--orange-peel);
+    /*font-weight: bold;*/
+}
+
+.register .card-body {
+    padding: 2.5%;
+    border: 1px solid var(--dark-grey);
+    background-color: var(--sky-light);
+}
+
+/* Carousel CSS */
+
