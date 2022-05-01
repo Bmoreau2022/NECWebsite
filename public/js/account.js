@@ -49,9 +49,11 @@ $(document).ready(() => {
 
 function load_user(user) {
     $('#name').text(user.fullname);
-    $('#assoc').text(user.assoc);
+    let assoc_test = user.assoc
+    console.log(assoc_test)
+    $('#assoc').text(assoc_test);
     $('#profile_img').attr('src', user.profile);
-
+    $('#email').text(user.username);
     // if(user.carsliked) {
     //     const cars = [];
     //     user.carsliked.forEach((user) => {

@@ -112,7 +112,8 @@ app.post('/register', (req, res) => {
     const newUser = {
         username: req.body.username,
         fullname: req.body.fullname,
-        //assoc: req.body.assoc,
+        email: req.body.email,
+        assoc: req.body.assoc,
         profile: req.body.profile,
     }
     User.register(newUser, req.body.password, (err, user) => {
