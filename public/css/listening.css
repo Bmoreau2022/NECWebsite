@@ -19,10 +19,13 @@
     --sky-light: #BBEBEA;
 }
 
-
+nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 html body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: var(--lighter-grey);
+    background-color: white;
 }
 
 .container {
@@ -269,7 +272,7 @@ footer{
 }
 
 main{
-    background-color: var(--lighter-grey);
+    background-color: white;
 }
 .listeningHead h3{
     color: var(--orange-peel);

@@ -25,6 +25,18 @@ function showList(events) {
 
 }
 
+function showListPast(events) {
+    $('#event_list_past').empty();
+
+    events.forEach((event,idx)=>{
+        console.log(event,idx)
+        $('#event_list_past')
+            .append(get_event_block(event,idx))
+    })
+
+
+}
+
 
 window.addEventListener('resize', function(){
     addRequiredClass();
@@ -75,19 +87,11 @@ let events_current = [
 ]
 
 let events_past = [
-    {
-        "event_name": "Worldwide Teach-in on Climate Justice - 3/18/22",
-        "event_description": "",
-        "url": "https://newearthconversation.org/wp-content/uploads/2022/02/Climate-teach-in-poster-V3-225x300.png",
-    },
-    {
-        "event_name": "",
-        "event_description": "",
-        "url": "",
-    }
+
 ]
 
 showList(events_current);
+showListPast(events_past);
 
 $(document).ready(() => {
     $.getJSON('/get_current_user').done((data) => {
