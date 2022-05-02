@@ -175,7 +175,7 @@ app.get('/logout', (req, res) => {
 app.get("/account", (req, res) => {
     //A page can be viewed only after login
     if (req.isAuthenticated()) {
-        res.sendFile(__dirname + "/src/account.html");
+        res.sendFile(__dirname + "/public/src/account.html");
     } else {
         res.redirect("/login.html?error= You need to be logged in");
     }

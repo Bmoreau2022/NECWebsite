@@ -270,3 +270,7 @@ footer {
 .card-body {
     background-color: var(--sky-light);
 }
+.card-body h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+}
