@@ -17,7 +17,11 @@
 
 html body {
     font-family: 'Noto Sans', sans-serif;
+}
 
+body {
+    background: url("/public/assets/img/Background.png");
+    background-size: 125%;
 }
 
 nav {
@@ -276,10 +280,6 @@ footer {
 }
 
 /* Page specific CSS */
-
-main {
-    background-color: var(--lighter-grey);
-}
 
 .intro h4 {
     color: var(--orange-peel);
