@@ -42,7 +42,9 @@ html body {
 .nav-wrapper .brand span p {
     font-weight: bold;
 }
-
+body h1 {
+    color: var(--orange-peel);
+}
 
 .nav-wrapper {
     display: flex;
