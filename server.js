@@ -48,9 +48,8 @@ const userSchema = new mongoose.Schema(
             type: String,
         },
 
-        eventsliked: [{
-            year: String,
-            event: String
+        events_attened: [{
+            event_title: String
         }]
     }
 )
@@ -188,7 +187,7 @@ app.post("/account", (req, res) => {
         fullname: req.body.fullname,
         profile: req.body.profile,
         assoc: req.body.assoc,
-        eventsliked: req.body.eventsliked
+        events_attended: req.body.events_attended
     }
     if (req.isAuthenticated()) {
         res.send({

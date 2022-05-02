@@ -21,6 +21,8 @@ function showList(events) {
         $('#event_list_current')
             .append(get_event_block(event,idx))
     })
+
+
 }
 
 
@@ -63,6 +65,7 @@ let events_current = [
         "event_name": "Worldwide Teach-in on Climate Justice - 3/18/22",
         "event_description": "",
         "url": "https://newearthconversation.org/wp-content/uploads/2022/02/Climate-teach-in-poster-V3-225x300.png",
+
     },
     {
         "event_name": "Listening in Nature Event - 4/22/22",
@@ -96,4 +99,17 @@ $(document).ready(() => {
             $('.logout').remove()
         }
     })
+
+    $('.btn').on('click',function (){
+        $.getJSON('/get_current_user').done(function (data) {
+            console.log(data)
+            const user = data.data
+            if(data['message'] === "success"){
+
+            }
+            else{
+                location.href = "/login.html"
+            }
+        })
+})
 })
