@@ -6,7 +6,10 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 }
-
+nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 :root {
     --dark: #000000;
     --pure: #ffffff;
@@ -270,11 +273,7 @@ footer img {
 footer {
     margin: auto;
 }
-/* Page specific CSS */
 
-main {
-    background-color: var(--lighter-grey);
-}
 
 /* Account CSS */
 .account .img{

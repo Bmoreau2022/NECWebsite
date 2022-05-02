@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 :root {
     --dark: #000000;
     --pure: #ffffff;
@@ -20,14 +29,10 @@ html body {
 
 }
 
-nav {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-body {
-    margin: 0 !important;
-    padding: 0 !important;
+.container {
+    width: 1152px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .nav-wrapper .brand span h4 {
@@ -44,7 +49,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(to right, var(--sky), var(--pure));
-    width: 100%;
 }
 
 .brand {
@@ -83,6 +87,10 @@ body {
 
 .nav-wrapper ul.nav-list li a:hover, .nav-wrapper ul.nav-list li.active a {
     color: var(--orange-peel);
+}
+
+.nav-wrapper ul.nav-list li button:hover, .nav-wrapper ul.nav-list li.active button {
+    color: var(--grass-green);
 }
 
 .btn {
@@ -266,28 +274,8 @@ footer {
     margin: auto;
 }
 
-body h1 {
-    color: var(--orange-peel);
-
-}
-body {
-    background-color: white;
-}
-
-
-.carousel-caption{
-    opacity: .2;
-}
-
-.carousel-caption:hover{
-    opacity: 1;
-}
 
 /* Page specific CSS */
-
-main {
-    background-color: white;
-}
 
 .intro h4 {
     color: var(--orange-peel);
