@@ -30,12 +30,6 @@ body {
     padding: 0 !important;
 }
 
-.container {
-    width: 1152px;
-    max-width: 90%;
-    margin: 0 auto;
-}
-
 .nav-wrapper .brand span h4 {
     font-weight: bold;
 }
@@ -50,6 +44,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(to right, var(--sky), var(--pure));
+    width: 100%;
 }
 
 .brand {
@@ -88,10 +83,6 @@ body {
 
 .nav-wrapper ul.nav-list li a:hover, .nav-wrapper ul.nav-list li.active a {
     color: var(--orange-peel);
-}
-
-.nav-wrapper ul.nav-list li button:hover, .nav-wrapper ul.nav-list li.active button {
-    color: var(--grass-green);
 }
 
 .btn {
@@ -274,6 +265,7 @@ footer img {
 footer {
     margin: auto;
 }
+
 body h1 {
     color: var(--orange-peel);
 
