@@ -278,6 +278,8 @@ footer {
 /* Account CSS */
 .account .img{
     padding: 50px;
+    height: 80%;
+    width: 80%;
 }
 
 .account h1{
