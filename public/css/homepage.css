@@ -19,11 +19,6 @@ html body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-body {
-    background: url("/public/assets/img/Background.png");
-    background-size: 125%;
-}
-
 nav {
     margin: 0 !important;
     padding: 0 !important;
