@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Account Page</title>
 
 
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/vanilla-zoom.min.css">
 
     <!--    css style-->
     <link rel="stylesheet" href="css/account.css">
@@ -30,13 +37,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <script src="js/account.js" defer></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="../assets/js/vanilla-zoom.js"></script>
+    <script src="../assets/js/theme.js"></script>
+
 </head>
-<body class="container mobile">
 <!-- Responsive Nav Bar designed by codersgyan from https://github.com/codersgyan/responsive-navbar -->
 <nav class="navbar navbar-expand-xl">
-    <div class="container nav-wrapper">
+    <div class="nav-wrapper">
         <div class="brand">
-            <span>
+            <span style="padding-left: 20px;">
                 <h4 style="color: var(--orange-peel) !important;">A NEW EARTH CONVERSATION</h4>
                 <p>AT CLARK UNIVERSITY</p>
             </span>
@@ -48,29 +59,29 @@
         </div>
         <ul class="nav-list">
             <li class="active">
-                <a href="homepage.html">Home</a>
+                <a href="/">Home</a>
             </li>
             <li>
                 <a href="#">About NEC</a>
-
+                <ul class="dropdown-list">
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../courses.html">NEC Courses</a></li>
+                    <li><a href="../elements.html">Elements of the NEC</a></li>
+                    <li><a href="../people.html">People</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#">Resources</a>
                 <ul class="dropdown-list">
-                    <li><a href="get_involved.html">Get Involved</a></li>
-                    <li><a href="courses.html">NEC Courses</a></li>
-                    <li><a href="people.html">People</a></li>
-                    <li><a href="listening.html">Listening in Nature</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="../nec_resources.html">NEC Resources</a></li>
+                    <li><a href="../get_involved.html">Get Involved</a></li>
+                    <li><a href="../listening.html">Listening in Nature</a></li>
+                    <li><a href="../events.html">Events</a></li>
+                    <li><a href="../Council.html">UHF Council</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">News</a>
-            </li>
-            <li>
-                <button class="btn" style="font-size: larger;">
-                    <a href="/login">Login</a>
-                </button>
+                <a href="../news.html">News</a>
             </li>
             <li>
                 <div class="navbar-brand mb-0 logout"><a id="showname" href="/account"></a></div>
@@ -81,12 +92,14 @@
         </ul>
     </div>
 </nav>
-<main class="page landing-page"
-      style="background: url(https://newearthconversation.org/wp-content/uploads/2016/02/homepage-1-e1651273119880.png);">
+<br>
+<body style="background: url(../assets/img/ClipartKey_83028.png); background-size: 125%;">
+<main class="page landing-page">
     <section class="clean-block features">
-        <div class="container mt-5 account">
+        <div class="container mt-10 account">
             <div class="row">
-                <div class="col-xl-4 info">
+                <div class="col-xl-4">
+                    <div class="info">
                     <!--<div class="block-heading" style="text-align: left;">-->
                     <div class="col-lg-6">
                         <!--//class="lead text-left"-->
@@ -95,27 +108,15 @@
                         <!--class="lead text-left">-->
                         <h4> Association: <span id="assoc"></span></h4>
                     </div>
+                    </div>
                 </div>
-                <div class="col img"><img id="profile_img" src="../public/assets/img/LIN-walk-1024x576.jpeg" style="width: 100%;height: 100%;"></div>
+                <div class="col img"><img id="profile_img" src="../assets/img/LIN-walk-1024x576.jpeg"
+                                          style="width: 100%;height: 100%;"></div>
             </div>
         </div>
     </section>
-    <!--<section id="car_info" style="margin-top: 2%">
-        <div class="row">
-            <div class="col-lg-3">
-                <img id="profile_img" src="img/placeholder.png" width="100%">
-            </div>
-            <div class="col-lg-9">
-                <h1 id="name"></h1>
-                <h3 id="assoc"></h3>
-                <h3>Favorite car list:</h3>
-                <ul id="car_list" class="list-group">
-                    <li class="list-group-item">Favorites</li>
-                </ul>
-            </div>
-        </div>
-    </section>-->
 </main>
+</body>
 <br>
 <footer>
     <div class="row">
@@ -123,10 +124,9 @@
             <p><a href="https://www.clarku.edu/schools/idce/"><img class="alignnone wp-image-1746 size-large"
                                                                    src="https://newearthconversation.org/wp-content/uploads/2019/05/Clark-IDCE-e1612457410360.png"
                                                                    alt=""/></a></p>
-            <p><a href="https://councilontheuncertainhumanfuture.org/"><img
-                    class="alignnone wp-image-1746 size-large"
-                    src="https://newearthconversation.org/wp-content/uploads/2019/05/logo_uhf-01-1024x65.png"
-                    alt=""/></a></p>
+            <p><a href="https://councilontheuncertainhumanfuture.org/"><img class="alignnone wp-image-1746 size-large"
+                                                                            src="https://newearthconversation.org/wp-content/uploads/2019/05/logo_uhf-01-1024x65.png"
+                                                                            alt=""/></a></p>
             <p><a href="https://www.facebook.com/A-New-Earth-Conversation-1138118049600755/" target="_blank"
                   rel="noopener"><i
                     class="fa fa-facebook-official"></i> Follow NEC on Facebook</a></p>
@@ -146,7 +146,6 @@
         </div>
     </div>
 </footer>
-
-
 </body>
+
 </html>
