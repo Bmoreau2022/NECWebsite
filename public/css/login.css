@@ -282,6 +282,8 @@ footer {
 
 .login-card{
     padding: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
 }
 
 .login {

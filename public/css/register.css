@@ -273,3 +273,8 @@ footer img {
 footer {
     margin: auto;
 }
+
+/*Register page specific css*/
+.card-body {
+    background-color: var(--sky-light);
+}
