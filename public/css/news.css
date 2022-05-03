@@ -264,3 +264,14 @@ footer img {
 footer {
     margin: auto;
 }
+
+/*News css*/
+.twitter_pages {
+    padding-top: 15px;
+    padding-left: 50px;
+}
+
+.twitter_feed {
+    padding-top: 20px;
+    padding-left: 100px;
+}
