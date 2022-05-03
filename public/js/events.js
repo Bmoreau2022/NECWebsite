@@ -6,7 +6,7 @@ function get_event_block(event, idx) {
                     <div class="row"><img src="${event.url}" alt="" style="width: 30%; margin: auto"></div>
                     <br>
                     <div class="row" style="">
-                        <button class="btn btn-outline-primary Attend" value="0" style="width: 30%;margin: auto">Attend</button>
+                        <button class="btn btn-outline-primary Attend" value="${event.event_name}" style="width: 30%;margin: auto">Attend</button>
                     </div>
                 
             </div><br><hr>`
@@ -103,17 +103,23 @@ $(document).ready(() => {
             $('.logout').remove()
         }
     })
-
-    $('.btn').on('click',function (){
-        $.getJSON('/get_current_user').done(function (data) {
-            console.log(data)
-            const user = data.data
-            if(data['message'] === "success"){
-
-            }
-            else{
-                location.href = "/login.html"
-            }
-        })
 })
-})
+
+$('.btn').on('click', function () {
+    let ev_name = $(this).val();
+    console.log(ev_name)
+    let events = {};
+    for (let i = 0; i < events_current.length; i++) {
+        if (events_current[i].event_name === ev_name) {
+            events = events_current[i];
+            break
+        }
+    }
+    $.post('/attend_event', {event: events}).done((data) => {
+        if (data.message === "success") {
+            location.reload();
+        } else {
+            location.href = data.redr;
+        }
+    });
+});

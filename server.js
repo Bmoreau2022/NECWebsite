@@ -48,8 +48,10 @@ const userSchema = new mongoose.Schema(
             type: String,
         },
 
-        events_attened: [{
-            event_title: String
+        events_attended: [{
+            event_name: String,
+            event_description: String,
+            url: String
         }]
     }
 )
@@ -198,6 +200,49 @@ app.post("/account", (req, res) => {
         res.send({
             message: "failed",
             data: {}
+        })
+    }
+});
+
+app.post('/attend_event', (req, res) => {
+    //Users need to login to like a car
+    if (req.isAuthenticated()) {
+        //save car to the user
+        const event = req.body.event;
+        const user = {
+            username: req.user.username,
+            fullname: req.user.fullname,
+            userId: req.user._id
+        }
+        console.log(event);
+        console.log(user);
+        User.updateOne(
+            {
+                _id: user.userId,
+                'events_attended.event_name': {$ne: event.event_name}
+            },
+            {
+                $push: {
+                    events_attended: event
+                }
+            },
+            (err) => {
+                if (err) {
+                    res.send({
+                        message: "database error"
+                    })
+                } else {
+                    res.send({
+                        message: "success"
+                    })
+                }
+            }
+        )
+    } else {
+        //navigate to the login page
+        res.send({
+            message: "login required",
+            redr: "/login"
         })
     }
 });
