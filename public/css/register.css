@@ -268,6 +268,7 @@ footer {
 
 /*Register page specific css*/
 .card-body {
+    border: 1px solid var(--dark-grey);
     background-color: var(--sky-light);
 }
 .card-body h1 {
