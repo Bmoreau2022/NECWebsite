@@ -54,13 +54,20 @@ function load_user(user) {
     $('#assoc').text(assoc_test);
     $('#profile_img').attr('src', user.profile);
     $('#email').text(user.username);
-    // if(user.carsliked) {
-    //     const cars = [];
-    //     user.carsliked.forEach((user) => {
-    //         cars.push(user.carsliked)
-    //     });
-    //     $('#car_list').text(cars.join(", "))
-    // }
+    if(user.events_attended){
+        const events = [];
+        user.events_attended.forEach((event) => {
+            events.push(JSON.stringify(event));
+        });
+        for(let i = 0; i < events.length; i++){
+            let obj = JSON.parse(events[i]);
+            let exp = `<li style="border: 1px solid lightgrey;"> 
+                            <p style="padding-left: 3%;list-style: none"> ${obj.event_name}</p>
+                    </li>`;
+            //console.log(obj.event_name)
+            $('#attended_events').append(exp);
+        }
+    }
 }
 
 const urlParams = new URLSearchParams(window.location.search);
