@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-}
-nav {
-    margin: 0 !important;
-    padding: 0 !important;
-}
+
 :root {
     --dark: #000000;
     --pure: #ffffff;
@@ -26,13 +17,16 @@ nav {
 
 html body {
     font-family: 'Noto Sans', sans-serif;
-
 }
 
-.container {
-    width: 1152px;
-    max-width: 90%;
-    margin: 0 auto;
+nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .nav-wrapper .brand span h4 {
@@ -49,6 +43,7 @@ html body {
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(to right, var(--sky), var(--pure));
+    width: 100%;
 }
 
 .brand {
@@ -87,10 +82,6 @@ html body {
 
 .nav-wrapper ul.nav-list li a:hover, .nav-wrapper ul.nav-list li.active a {
     color: var(--orange-peel);
-}
-
-.nav-wrapper ul.nav-list li button:hover, .nav-wrapper ul.nav-list li.active button {
-    color: var(--grass-green);
 }
 
 .btn {
