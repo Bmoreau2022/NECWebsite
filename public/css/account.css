@@ -277,12 +277,14 @@ footer {
     font-size: 50px;
     color: var(--orange-peel);
     font-weight: bold;
+    white-space:nowrap
 }
 
 .account h4{
     font-size: 30px;
     /*color: var(--orange-peel);*/
     padding: 10px;
+    white-space:nowrap
 }
 
 .account .info{
