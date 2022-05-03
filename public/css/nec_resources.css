@@ -264,3 +264,19 @@ footer img {
 footer {
     margin: auto;
 }
+
+.paragraph {
+    padding: 15px;
+}
+
+.paragraph h1{
+    padding-top: 15px;
+}
+
+.paragraph h3{
+    padding-top: 15px;
+}
+
+.paragraph h5{
+    padding-top: 15px;
+}
