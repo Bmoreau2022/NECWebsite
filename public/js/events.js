@@ -13,6 +13,19 @@ function get_event_block(event, idx) {
                 
             </div><br><hr>`
 }
+function get_event_block_past(event, idx) {
+    return `<div class="event_block" >
+                
+                    <div class="row" style="text-align: center"><h2>${event.event_name}</h2></div>
+                    <br>
+                    <div class="row"><img src="${event.url}" alt="" style="width: 30%; margin: auto"></div>
+                    <br>
+                    <div class="row" style="margin: auto; width: 50%"><p>${event.event_description}</p></div>
+                    <br>
+                  
+                
+            </div><br><hr>`
+}
 
 
 function showList(events) {
@@ -33,7 +46,7 @@ function showListPast(events) {
     events.forEach((event,idx)=>{
         console.log(event,idx)
         $('#event_list_past')
-            .append(get_event_block(event,idx))
+            .append(get_event_block_past(event,idx))
     })
 
 
