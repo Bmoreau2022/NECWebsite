@@ -10,7 +10,7 @@
     --evergreen: #098761;
     --grass-green: #54B02E;
     --yellow: #F0EB17;
-    --orange-peel: #FF6202;
+    --forrest-green: #606c38;
     --sky: #76DEDE;
     --sky-light: #BBEBEA;
 }
@@ -81,12 +81,12 @@ body {
 }
 
 .nav-wrapper ul.nav-list li a:hover, .nav-wrapper ul.nav-list li.active a {
-    color: var(--orange-peel);
+    color: var(--forrest-green);
 }
 
 .btn {
     background: var(--pure);
-    color: var(--orange-peel);
+    color: var(--forrest-green);
     outline: none;
     padding: 8px 20px;
     font-size: 14px;
@@ -304,7 +304,7 @@ footer {
 /* Page specific CSS */
 
 .staffHead h3{
-    color: var(--orange-peel);
+    color: var(--forrest-green);
     text-align: left;
     font-weight: bold;
 }
