@@ -264,3 +264,7 @@ footer img {
 footer {
     margin: auto;
 }
+
+.accordion p {
+    font-size: 17px;
+}

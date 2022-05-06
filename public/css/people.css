@@ -320,7 +320,6 @@ footer {
 
 .staffHead .text{
     padding: 2.5%;
-    border: 2px solid var(--dark-grey);
     background-color: var(--sky-light);
 }
 
@@ -329,7 +328,7 @@ footer {
     height: 300px;
     padding-left: 0;
     padding-right: 0;
-    border: 2px solid var(--dark-grey);
+
 }
 
 .staffImg{
