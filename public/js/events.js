@@ -8,7 +8,7 @@ function get_event_block(event, idx) {
                     <div class="row" style="margin: auto; width: 50%"><p>${event.event_description}</p></div>
                     <br>
                     <div class="row" style="">
-                        <button class="btn btn-outline-primary Attend" value="${event.event_name}" style="width: 30%;margin: auto">Attend</button>
+                        <button class="btn btn-primary Attend" value="${event.event_name}" style="width: 30%;margin: auto">Attend</button>
                     </div>
                 
             </div><br><hr>`
@@ -23,7 +23,7 @@ function get_event_block_past(event, idx) {
                     <div class="row" style="margin: auto; width: 50%"><p>${event.event_description}</p></div>
                     <br>
                      <div class="row" style="">
-                        <button class="btn btn-outline-primary Attended" value="${event.event_name}" style="width: 30%;margin: auto">Attended</button>
+                        <button class="btn btn-primary Attended" value="${event.event_name}" style="width: 30%;margin: auto">Attended</button>
                     </div>
                   
                 
