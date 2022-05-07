@@ -341,3 +341,16 @@ footer {
     border: 2px solid var(--dark-grey);
     background-color: var(--sky-light);
 }
+.staffHead .person-Core{
+    border-radius: 50px;
+    margin-left: 0px;
+    border: 2px solid var(--dark-grey);
+    background-color: var(--sky-light);
+}
+.staffHead .staff-Core{
+    width: 150px;
+    height: 150px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
