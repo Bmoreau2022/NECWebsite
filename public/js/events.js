@@ -22,6 +22,9 @@ function get_event_block_past(event, idx) {
                     <br>
                     <div class="row" style="margin: auto; width: 50%"><p>${event.event_description}</p></div>
                     <br>
+                     <div class="row" style="">
+                        <button class="btn btn-outline-primary Attended" value="${event.event_name}" style="width: 30%;margin: auto">Attended</button>
+                    </div>
                   
                 
             </div><br><hr>`
@@ -147,13 +150,33 @@ $(document).ready(() => {
     })
 })
 
-$('.btn').on('click', function () {
+$('.Attend').on('click', function () {
     let ev_name = $(this).val();
     console.log(ev_name)
     let events = {};
     for (let i = 0; i < events_current.length; i++) {
         if (events_current[i].event_name === ev_name) {
             events = events_current[i];
+            break
+        }
+    }
+    $.post('/attend_event', {event: events}).done((data) => {
+        if (data.message === "success") {
+            location.reload();
+        } else {
+            location.href = data.redr;
+        }
+    });
+});
+
+
+$('.Attended').on('click', function () {
+    let ev_name = $(this).val();
+    console.log(ev_name)
+    let events = {};
+    for (let i = 0; i < events_past.length; i++) {
+        if (events_past[i].event_name === ev_name) {
+            events = events_past[i];
             break
         }
     }
