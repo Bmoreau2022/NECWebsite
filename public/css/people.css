@@ -324,8 +324,8 @@ footer {
 }
 
 .staffHead .staff{
-    width: 300px;
-    height: 300px;
+    width: 90%;
+    height: 90%;
     padding-left: 0;
     padding-right: 0;
 
@@ -348,8 +348,8 @@ footer {
     background-color: var(--sky-light);
 }
 .staffHead .staff-Core{
-    width: 150px;
-    height: 150px;
+    width: 70%;
+    height: 70%;
     padding-left: 0;
     padding-right: 0;
 
