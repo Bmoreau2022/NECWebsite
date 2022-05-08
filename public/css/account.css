@@ -10,9 +10,10 @@
     --evergreen: #098761;
     --grass-green: #54B02E;
     --yellow: #F0EB17;
-    --orange-peel: #FF6202;
-    --sky: #76DEDE;
+    --orange-peel: #FEFAE0;
+    --sky: #606C38;
     --sky-light: #BBEBEA;
+    --text: #283618;
 }
 
 html body {
@@ -275,7 +276,7 @@ footer {
 
 .account h1{
     font-size: 50px;
-    color: var(--orange-peel);
+    color: var(--text);
     font-weight: bold;
     white-space:nowrap
 }

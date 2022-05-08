@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
-
 :root {
     --dark: #000000;
     --pure: #ffffff;
@@ -10,10 +9,10 @@
     --evergreen: #098761;
     --grass-green: #54B02E;
     --yellow: #F0EB17;
-    --forrest-green: #606c38;
-    --orange-peel: #FF6202;
-    --sky: #76DEDE;
+    --orange-peel: #FEFAE0;
+    --sky: #606C38;
     --sky-light: #BBEBEA;
+    --text: #283618;
 }
 
 html body {
