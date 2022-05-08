@@ -106,7 +106,7 @@ let events_current = [
 
 let events_past = [
     {
-        "event_name": "listening in Nature Event - 11/5/21",
+        "event_name": "Listening in Nature Event - 11/5/21",
         "event_description": "",
         "url": "https://newearthconversation.org/wp-content/uploads/2021/10/LNW_1_5thNov.jpg",
     },
