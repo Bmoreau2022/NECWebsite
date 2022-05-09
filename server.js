@@ -28,14 +28,19 @@ const userSchema = new mongoose.Schema(
         username: {
             type: String,
             unique: true,
-            minLength: 3
+            require: true,
+            minlength: 0
         },
         password: {
             type: String,
+            require: true,
+            minLength: 5,
 
         },
         confirm: {
-            type: Boolean,
+            type: String,
+            require: true,
+            minLength: 5,
 
         },
         fullname: {
@@ -113,29 +118,45 @@ app.post('/register', (req, res) => {
     const newUser = {
         username: req.body.username,
         fullname: req.body.fullname,
-        email: req.body.email,
-        assoc: req.body.assoc,
+        password: req.body.password,
+        confirm: req.body.confirm,
         profile: req.body.profile,
+        assoc: req.body.assoc,
     }
-    User.register(newUser, req.body.password, (err, user) => {
-        if (err) {
-            console.log(err);
-            res.redirect('/register.html?error=' + err)
-        } else {/*
-            if (req.body.password !== req.body.confirm) {
+    if(req.body.username === ""){
+        const error = "Email cannot be empty";
+        res.redirect('/register.html?error=' + error  + '&input=' + JSON.stringify(newUser));
+    }
+    else if(req.body.password === ""){
+        const error = "Password cannot be empty";
+        res.redirect('/register.html?error=' + error  + '&input=' + JSON.stringify(newUser));
+    }
+    else if(req.body.password !== req.body.confirm){
+        const error = "Passwords do not match";
+        res.redirect('/register.html?error=' + error  + '&input=' + JSON.stringify(newUser));
+    }
+    else if(req.body.fullname === ""){
+        const error = "Full name cannot be empty";
+        res.redirect('/register.html?error=' + error  + '&input=' + JSON.stringify(newUser));
+    }
+    else if(req.body.assoc === ""){
+        const error = "Association cannot be empty";
+        res.redirect('/register.html?error=' + error  + '&input=' + JSON.stringify(newUser));
+    }
+    else {
+        User.register(newUser, req.body.password, function(err, user){
+            if (err) {
                 console.log(err);
-                res.redirect('/register?error= Passwords do not match');
-            } else if (req.body.password.length < 5) {
-                console.log(err);
-                res.redirect('/register?error= Password must be 5 characters or greater');
-            } else {*/
-            console.log(user);
-            const authenticate = passport.authenticate('local');
-            authenticate(req, res, () => {
-                res.redirect('/')
-            });
-        }
-    })
+                res.redirect("/register.html?error=" + err["message"] + "&input=" + JSON.stringify(newUser));
+            } else {
+                console.log(user);
+                const authenticate = passport.authenticate('local');
+                authenticate(req, res, () => {
+                    res.redirect('/')
+                })
+            }
+        });
+    }
 })
 ;
 
