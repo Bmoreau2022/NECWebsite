@@ -300,12 +300,13 @@ footer {
 }
 
 /* Register CSS */
-.card-body {
-    background-color: var(--sky-light);
+.videos .card-body {
+    border: 2px solid var(--text);
+    background: rgba(254,250,224,0.5);
 }
 
 .register h1 {
-    color: var(--orange-peel);
+    color: var(--text);
     /*font-weight: bold;*/
 }
 

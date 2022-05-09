@@ -61,7 +61,7 @@ function load_user(user) {
         });
         for(let i = 0; i < events.length; i++){
             let obj = JSON.parse(events[i]);
-            let exp = `<li style="border: 3px solid #FF6202;height: 30px"> 
+            let exp = `<li style="border: 2px solid var(--text); height: 30px"> 
                             <h5 style="padding-left: 3%;list-style: none"> ${obj.event_name}</h5>
                     </li>`;
             //console.log(obj.event_name)

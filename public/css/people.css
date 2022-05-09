@@ -303,26 +303,31 @@ footer {
 
 /* Page specific CSS */
 
-.staffHead h3{
-    color: var(--orange-peel);
+h2, h4{
+    color: var(--text);
     text-align: left;
     font-weight: bold;
 }
 
-.staffHead p{
+h2 {
+    padding-left: 15px;
+}
+
+p{
     text-align: left;
 }
 
-.staffHead .name{
+.name{
     text-align: center;
 }
 
-.staffHead .text{
+.text{
     padding: 2.5%;
-    background-color: var(--sky-light);
+    background: rgba(254,250,224,0.5);
+    border: 2px solid var(--text);
 }
 
-.staffHead .staff{
+.staff{
     width: 90%;
     height: 90%;
     padding-left: 0;
@@ -334,19 +339,19 @@ footer {
     padding-left: 50px;
 }
 
-.staffHead .person{
+.person{
     border-radius: 50px;
     margin-left: 60px;
-    border: 2px solid var(--dark-grey);
-    background-color: var(--sky-light);
+    border: 2px solid var(--text);
+    background-color: var(--orange-peel);
 }
-.staffHead .person-Core{
+.person-Core{
     border-radius: 50px;
     margin-left: 0px;
-    border: 2px solid var(--dark-grey);
-    background-color: var(--sky-light);
+    border: 2px solid var(--text);
+    background-color: var(--orange-peel);
 }
-.staffHead .staff-Core{
+.staff-Core{
     width: 70%;
     height: 70%;
     padding-left: 0;

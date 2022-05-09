@@ -308,7 +308,7 @@ footer {
 
 .login .login-body {
     padding: 2.5%;
-    border: 1px solid var(--dark-grey);
+    border: 2px solid var(--text);
     background: rgba(254,250,224,0.5);
 }
 

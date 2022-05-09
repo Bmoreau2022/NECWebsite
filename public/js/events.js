@@ -94,13 +94,13 @@ let events_current = [
     {
         "event_name": "Worldwide Teach-in on Climate Justice - 3/18/22",
         "event_description": "",
-        "url": "/public/img/ClimateJustice.png",
+        "url": "img/ClimateJustice.png",
 
     },
     {
         "event_name": "Listening in Nature Event - 4/22/22",
         "event_description": "",
-        "url": "/public/img/NatureEvent1.jpeg",
+        "url": "img/NatureEvent1.jpeg",
     }
 ]
 
@@ -108,30 +108,30 @@ let events_past = [
     {
         "event_name": "Listening in Nature Event - 11/5/21",
         "event_description": "",
-        "url": "/public/img/NatureEvent2.jpeg",
+        "url": "img/NatureEvent2.jpeg",
     },
 
     {
         "event_name": "The Ecology of Genocide - 11/3/21",
         "event_description": "",
-        "url": "/public/img/EcologyEvent.png",
+        "url": "img/EcologyEvent.png",
     },
 
     {
         "event_name": "Environmental Defenders Panel - 10/29/21",
         "event_description": "",
-        "url": "/public/img/Defenders.png",
+        "url": "img/Defenders.png",
     },
     {
         "event_name": "Graduate Students Symposium '21 - 5/19/21",
         "event_description": "",
-        "url": "/public/img/Symposium.png",
+        "url": "img/Symposium.png",
     },
     {
         "event_name": "Reflecting on the Climate Crisis Through Art - 5/14/21",
         "event_description": "Meet at Red Square to walk over to University Park for a relaxed art exploration of connection to place. Painting and drawing supplies will be provided for each participant. We will be creating art based on some guided open interpretation prompts related to climate change and the natural world. There will be opportunities to discuss and share each of our works during the event and possibly a chance to display work afterwards, if there is interest.\n" +
             "\n",
-        "url": "/public/img/Reflecting.png",
+        "url": "img/Reflecting.png",
     }
 ]
 
