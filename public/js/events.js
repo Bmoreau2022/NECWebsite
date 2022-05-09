@@ -1,6 +1,7 @@
 function get_event_block(event, idx) {
     return `<div class="event_block" >
-                
+                <div class="container" style="background: rgba(254,250,224,0.5); width: 75%; border: 2px solid var(--text); padding-bottom: 20px;">
+                    <br>
                     <div class="row" style="text-align: center"><h2>${event.event_name}</h2></div>
                     <br>
                     <div class="row"><img src="${event.url}" alt="" style="width: 30%; margin: auto"></div>
@@ -10,12 +11,15 @@ function get_event_block(event, idx) {
                     <div class="row" style="">
                         <button class="btn btn-primary Attend" value="${event.event_name}" style="width: 30%;margin: auto">Attend</button>
                     </div>
+                    </div>
                 
-            </div><br><hr>`
+            </div><br>`
 }
+
 function get_event_block_past(event, idx) {
     return `<div class="event_block" >
-                
+                <div class="container" style="background: rgba(254,250,224,0.5); width: 75%; border: 2px solid var(--text); padding-bottom: 20px;">
+                    <br>
                     <div class="row" style="text-align: center"><h2>${event.event_name}</h2></div>
                     <br>
                     <div class="row"><img src="${event.url}" alt="" style="width: 30%; margin: auto"></div>
@@ -25,19 +29,20 @@ function get_event_block_past(event, idx) {
                      <div class="row" style="">
                         <button class="btn btn-primary Attended" value="${event.event_name}" style="width: 30%;margin: auto">Attended</button>
                     </div>
+                    </div>
                   
                 
-            </div><br><hr>`
+            </div><br>`
 }
 
 
 function showList(events) {
     $('#event_list_current').empty();
 
-    events.forEach((event,idx)=>{
-        console.log(event,idx)
+    events.forEach((event, idx) => {
+        console.log(event, idx)
         $('#event_list_current')
-            .append(get_event_block(event,idx))
+            .append(get_event_block(event, idx))
     })
 
 
@@ -46,17 +51,17 @@ function showList(events) {
 function showListPast(events) {
     $('#event_list_past').empty();
 
-    events.forEach((event,idx)=>{
-        console.log(event,idx)
+    events.forEach((event, idx) => {
+        console.log(event, idx)
         $('#event_list_past')
-            .append(get_event_block_past(event,idx))
+            .append(get_event_block_past(event, idx))
     })
 
 
 }
 
 
-window.addEventListener('resize', function(){
+window.addEventListener('resize', function () {
     addRequiredClass();
 })
 
@@ -75,9 +80,9 @@ let mobileNav = document.querySelector('.nav-list')
 let bars = document.querySelectorAll('.hamburger span')
 let isActive = false
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function () {
     mobileNav.classList.toggle('open')
-    if(!isActive) {
+    if (!isActive) {
         bars[0].style.transform = 'rotate(45deg)'
         bars[1].style.opacity = '0'
         bars[2].style.transform = 'rotate(-45deg)'
@@ -144,7 +149,7 @@ $(document).ready(() => {
             const user = data.data;
             $('.login').remove();
             $('#showname').text(user.fullname);
-        }else{
+        } else {
             $('.logout').remove()
         }
     })
