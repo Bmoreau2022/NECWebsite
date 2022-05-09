@@ -94,13 +94,13 @@ let events_current = [
     {
         "event_name": "Worldwide Teach-in on Climate Justice - 3/18/22",
         "event_description": "",
-        "url": "https://newearthconversation.org/wp-content/uploads/2022/02/Climate-teach-in-poster-V3-225x300.png",
+        "url": "/public/img/ClimateJustice.png",
 
     },
     {
         "event_name": "Listening in Nature Event - 4/22/22",
         "event_description": "",
-        "url": "https://newearthconversation.org/wp-content/uploads/2022/02/lin--300x168.jpg",
+        "url": "/public/img/NatureEvent1.jpeg",
     }
 ]
 
@@ -108,30 +108,30 @@ let events_past = [
     {
         "event_name": "Listening in Nature Event - 11/5/21",
         "event_description": "",
-        "url": "https://newearthconversation.org/wp-content/uploads/2021/10/LNW_1_5thNov.jpg",
+        "url": "/public/img/NatureEvent2.jpeg",
     },
 
     {
         "event_name": "The Ecology of Genocide - 11/3/21",
         "event_description": "",
-        "url": "https://newearthconversation.org/wp-content/uploads/2021/10/CU-NEC-Ecology-of-Genocide-11-3-21-Poster.png",
+        "url": "/public/img/EcologyEvent.png",
     },
 
     {
         "event_name": "Environmental Defenders Panel - 10/29/21",
         "event_description": "",
-        "url": "https://newearthconversation.org/wp-content/uploads/2021/10/Environmental-Defenders-Panel-Participants-1152x1536-2.png",
+        "url": "/public/img/Defenders.png",
     },
     {
         "event_name": "Graduate Students Symposium '21 - 5/19/21",
         "event_description": "",
-        "url": "https://newearthconversation.org/wp-content/uploads/2021/05/Screen-Shot-2021-05-18-at-10.52.35-PM-e1621393222948.png",
+        "url": "/public/img/Symposium.png",
     },
     {
         "event_name": "Reflecting on the Climate Crisis Through Art - 5/14/21",
         "event_description": "Meet at Red Square to walk over to University Park for a relaxed art exploration of connection to place. Painting and drawing supplies will be provided for each participant. We will be creating art based on some guided open interpretation prompts related to climate change and the natural world. There will be opportunities to discuss and share each of our works during the event and possibly a chance to display work afterwards, if there is interest.\n" +
             "\n",
-        "url": "https://newearthconversation.org/wp-content/uploads/2021/04/Screen-Shot-2021-04-25-at-7.03.54-PM.png",
+        "url": "/public/img/Reflecting.png",
     }
 ]
 
