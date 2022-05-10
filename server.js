@@ -1,3 +1,4 @@
+const uri = process.env.MONGODB_URI;
 const express = require("express");
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
