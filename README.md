@@ -1,1 +1,5 @@
 # NEC-Website
+
+NEC stands for A New Earth Conversation and is a committee at Clark University. For our Software Development class we were tasked with the redesign of their website. This was also our school Capstone Project. The designers of the new site were Ezekiel Palmer, Brad Moreau, and Nick Myers under the supervision of Clark University's Computer Science department
+
+In the redesign of the website, we reformatted many of the sites pages through HTML and CSS. We also implemented a more fluid nav bar and event carousel. We also implemented some new features, including a login and logout function using Javascript. By logging, the user was then able to create messages and post them to the committee message board. There was also a focus on the way users navigate through the site. By regrouping certain pages and consolidating or separating certain pages, we created what we feel is a more navigable site. Finally, we updated color scheme, fonts, and site amenities to help modernize the site.
